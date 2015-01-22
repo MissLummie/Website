@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+    <title>אז מי אני בעצם?</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+<script type="text/javascript">
+var i = 1;
+function next() {
+    if (i < 9) {
+        i = i + 1;
+        pic.src = i + ".gif";
+    }
+    else
+        i = 1;
+}
+function prev() {
+    if (i > 1) {
+        i = i - 1;
+        pic.src = i + ".gif";
+    }
+    else
+        i = 9;
+}
+</script>
+</head>
+<body>
+<div style="width:1000px; height:200px; overflow:auto; background-image:url(http://oi60.tinypic.com/2gtzpme.jpg)">
+<center><br /><br /><br /><br /><br />
+<table><tr> <td><a href="me.htm"><img src="pics/me1.png" /></a></td>
+<td><a href="why.htm"><img src="pics/why1.png" /></a></td>
+<td><a href="whatisit.htm"><img src="pics/what1.png" /></a></td>
+<td><a href="links.htm"><img src="pics/links1.png" /></a></td></tr></table>
+</center>
+</div>
+
+<h1>ספרי לנו מי את!</h1> <p>
+אז קודם כל- היי! אני אלומה, בת 15 מאשדוד, <br />
+אני אוהבת לכתוב, לצייר, לשמוע שירים ולבלות עם חברים, <br />
+לאחרונה התחלתי להתנדב במד"א וללמוד תכנות ובניית אתרים.
+</p>
+
+<h1>על מה האתר הזה הולך להיות?</h1> <p> 
+נושא הגראפיקה הממוחשבת הוא נושא שמעסיק אותי כבר שנים רבות, <br />
+למעשה- מאז שהייתי קטנה מאוד! <br />
+אני מעצבת בתכנה "פוטושופ" מגרסה CS3 כבר 5 שנים, ולומדת לעצב באימג'רידי. <br /> <br />
+באתר הזה אנסה להסביר לכם, הגולשים מספר דברים בסיסייים בעיצוב ובגראפיקה ממוחשבת. 
+</p>
+<p>
+<h3>עבודות שלי</h3>
+מתוך הבלוג: ELLE H&D israblog.co.il/849534<br />
+<img src="1.jpg" name="pic" alt="תמונות מתחלפות!" />
+<br />
+<input type="button" value="Prev" onclick="prev()" />  
+<input type="button" value="next" onclick="next()" />
+</p>
+
+
+<br /><br /><a href="askme.htm">צור קשר</a> <a href="signup.htm">להרשמה לאתר</a>
+</body>
+</html>
