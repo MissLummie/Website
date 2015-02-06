@@ -1,34 +1,26 @@
 ﻿	body {
 	  background-color: #FFE4C4;
+	  background-repeat: repeat-x;
+	  background-attachment: fixed;
 	  direction:rtl;
 	  color:Black;
 	  font-family:Tahoma;
 	}
 	
-	h1 {
+	h1, h2, h3, h4, h5, h6 {
 	    color:Purple;
-	}
-	
-	h2 {
-	    color:Purple;
-	}
-	
-	h3 {
-		color:Purple;
-	}
-	
-	h4 {
-		color:Purple;
-	}
-	
-	h5 {
-		color:Purple;
-	}
-	
-	h6 {
-		color:Purple;
 	}
 	
 	p {
-	    font-size:12PX;
+	    font-size: 12PX;
 	}
+		
+    #top
+    {
+        width:1000px;
+        height:200px;
+        overflow:auto;
+        background-image:url('http://oi60.tinypic.com/2gtzpme.jpg');
+        background-position: center center;
+        text-align:center;
+    }

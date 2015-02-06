@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>הרשמה לאתר</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
 
 <script type="text/jscript">
 function isEmpty(str) { // function that check if the string is empty
@@ -61,13 +61,16 @@ function checkForm()
 </script>
 </head>
 <body>
-<div style="width:1000px; height:200px; overflow:auto; background-image:url(http://oi60.tinypic.com/2gtzpme.jpg)">
-<center><br /><br /><br /><br /><br />
-<table><tr> <td><a href="me.htm"><img src="pics/me1.png" /></a></td>
-<td><a href="why.htm"><img src="pics/why1.png" /></a></td>
-<td><a href="whatisit.htm"><img src="pics/what1.png" /></a></td>
-<td><a href="links.htm"><img src="pics/links1.png" /></a></td></tr></table>
-</center>
+<div id="top">
+<br /><br /><br /><br />
+<table>
+        <tr><td><br /></td></tr>
+        <tr><td><a href="me.htm"><img src="../pics/me1.png" /></a></td>
+            <td><a href="why.htm"><img src="../pics/why1.png" /></a></td>
+            <td><a href="whatisit.htm"><img src="../pics/what1.png" /></a></td>
+            <td><a href="links.htm"><img src="../pics/links1.png" /></a></td></tr></table>
+        <tr><td><a href="askme.htm">צור קשר</a></td> <td><a href="signup.htm">להרשמה לאתר</a></td></tr>
+ </table>        
 </div>
 
 <ul id="errors"> </ul>
@@ -134,8 +137,5 @@ function checkForm()
 
 </tbody></table>
 </form>
-
-
-<br /><br /><a href="askme.htm">צור קשר</a> <a href="signup.htm">להרשמה לאתר</a>
 </body>
 </html>
