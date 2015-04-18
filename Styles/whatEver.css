@@ -1,0 +1,35 @@
+﻿	body {
+	  background-color: #FFE4C4;
+	  background-repeat: repeat-x;
+	  background-attachment: fixed;
+	  direction:rtl;
+	  color:Black;
+	  font-family:Tahoma;
+	}
+	
+	h1.purple
+	{
+	    color:Purple;
+	}
+	h1.blue
+	{
+	    color:Blue;
+	}
+    h1.pink
+    {
+        color:Fuchsia;
+    }
+	
+	p {
+	    font-size: 12PX;
+	}
+		
+    #top
+    {
+        width:1000px;
+        height:200px;
+        overflow:auto;
+        background-image:url('http://oi60.tinypic.com/2gtzpme.jpg');
+        background-position: center center;
+        text-align:center;
+    }

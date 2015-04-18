@@ -1,38 +1,40 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="me.aspx.cs" Inherits="pages_me" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
     <title>אז מי אני בעצם?</title>
     <link rel="stylesheet" type="text/css" href="../styles/style.css" />
-<script type="text/javascript">
-    var i = 1;
-    function next() {
-        i++;
-        if (n1 == 8) {
-            n1 = 1;
+    <script type="text/javascript">
+        var i = 1;
+        function next() {
+            i++;
+            if (i == 8) {
+                i = 1;
+            }
+            pic.src = "../album/" + i + ".gif";
         }
-        pic.src = "../album/" + i + ".jpg";
-    }
 
-    function prev() {
-        i--;
-        if (i == 0) {
-            i = 8;
+        function prev() {
+            i--;
+            if (i == 0) {
+                i = 8;
+            }
+            pic.src = "../album/" + i + ".gif";
         }
-        pic.src = "../album/" + i + ".jpg";
-    }
 </script>
 </head>
 <body>
-
 <div id="top">
 <br /><br /><br /><br />
 <table>
         <tr><td><br /></td></tr>
-        <tr><td><a href="me.htm"><img src="../pics/me1.png" /></a></td>
-            <td><a href="why.htm"><img src="../pics/why1.png" /></a></td>
-            <td><a href="whatisit.htm"><img src="../pics/what1.png" /></a></td>
-            <td><a href="links.htm"><img src="../pics/links1.png" /></a></td></tr></table>
-        <tr><td><a href="askme.htm">צור קשר</a></td> <td><a href="signup.htm">להרשמה לאתר</a></td></tr>
+        <tr><td><a href="me.aspx"><img src="../pics/me1.png" /></a></td>
+            <td><a href="why.aspx"><img src="../pics/why1.png" /></a></td>
+            <td><a href="whatisit.aspx"><img src="../pics/what1.png" /></a></td>
+            <td><a href="links.aspx"><img src="../pics/links1.png" /></a></td></tr></table>
+        <tr><td><a href="askme.aspx">צור קשר</a></td> <td><a href="signup.aspx">להרשמה לאתר</a></td></tr>
  </table>        
 </div>
 
@@ -52,10 +54,10 @@
 <p>
 <h3>עבודות שלי</h3>
 מתוך הבלוג: ELLE H&D israblog.co.il/849534<br />
-<img src="../album/1.jpg" name="pic" alt="תמונות מתחלפות!" />
+<img src="../album/1.gif" name="pic" alt="תמונות מתחלפות!" />
 <br />
 <input type="button" value="Prev" onclick="prev()" />  
-<input type="button" value="next" onclick="next()" />
+<input type="button" value="Next" onclick="next()" />
 </p>
 </body>
 </html>
